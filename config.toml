@@ -1,0 +1,140 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+disableKinds = ["taxonomy"]
+
+[build]
+    writeStats = true
+
+[params]
+    title = "cv/resume"
+    author = "biblish"
+    description = "My portfolio"
+    copyright = "copyright 2024"
+    theme = "dark" # `dark` or `light`
+
+    # Profile section
+    [params.profile]
+        name = "Biblish"
+        title = "Abbr.,B.F."
+        photo = "/images/Montana sunset.jpg"
+
+    # Section for links to social websites
+    [params.social]
+        title = "Links"
+
+        [[params.social.list]]
+        icon = "fab fa-linkedin-in"
+        url = "#"
+        title = "LinkedIn"
+
+        [[params.social.list]]
+        icon = "fab fa-github"
+        url = "#"
+        title = "GitHub"
+		
+		[[params.social.list]]
+        icon = "ai ai-google-scholar"
+        url = "#"
+        title = "Google Scholar"
+		
+		[[params.social.list]]
+        icon = "ai ai-researchgate"
+        url = "#"
+        title = "ResearchGate"		
+
+    # Education section
+    [params.education]
+        title = "Education"
+
+        [[params.education.list]]
+        degree = "Advance level"
+        college = "PSS Mankon"
+        dates = "2022 - 2023"
+        thesis_title = "Title of the dissertation"
+        thesis_link = "#"
+
+        [[params.education.list]]
+        degree = "ordinary level"
+        college = "PSS Mankon"
+        dates = "2021- 2022"
+
+    # Languages section
+    [params.language]
+        title = "Languages"
+
+        [[params.language.list]]
+        language = "English"
+        level = "Fluent"
+				
+        [[params.language.list]]
+        language = "French"
+        level = "Basic"
+
+    # Interests section
+    [params.hobbies]
+        title = "Hobbies"
+
+        [[params.hobbies.list]]
+        interest = "Dancing"
+		
+		[[params.hobbies.list]]
+        interest = "Music"
+
+        [[params.hobbies.list]]
+        interest = "Reading"
+
+
+        [[params.hobbies.list]]
+        interest = "gaming"
+
+    [params.aboutme]
+        description = "My name is Biblish Fri,i am a level 200 student at Chitechma university with a strong interest in web development.i'm driven by a desire to build innovative solutions,and a passion for problem solvng.i'm excited to apply my skills and knowledge to real world projects and contribute to building user friendly websites."
+
+    # Experiences section
+    [params.experiences]
+        title = "Experiences"
+
+        [[params.jobs.list]]
+        position = "Job Number 1"
+        dates = "2018 - *Present*"
+		link = "#"
+        company = "Company name 1"
+
+
+        [[params.jobs.list]]
+        position = "Job Number 2"
+        dates = "2016 - 2018"
+		link = "#"
+        company = "Company name 2"
+        details = "Brief description of the `work` done. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+
+    # Projects section
+    [params.projects]
+        title = "Projects"
+
+        [[params.projects.list]]
+        title = "Awesome Project 1"
+        url = "#"
+        description = "Description of the *awesome* project 1"
+		
+		[[params.projects.list]]
+        title = "Awesome Project 2"
+        url = "#"
+        description = "Description of the **awesome** project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+
+    # Skills section
+    [params.skills]
+        title = "Skills"
+
+        [[params.skills.list]]
+        skill = "html"
+        skillrating = 50 # out of 100
+                
+        [[params.skills.list]]
+        skill = "c programming"
+        skillrating = 45
+		
+        [[params.skills.list]]
+        skill = "c#"
+        skillrating = 60
+
